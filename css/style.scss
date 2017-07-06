@@ -1,0 +1,39 @@
+/*Variable declaration*/
+$default_width : 250px;
+$default_height : 150px;
+/*
+1.At default ,the image will fit to div
+2. On hover, change the image radius
+3. On hover,change the height and width of div
+*/
+/*Default style to div*/
+#maindiv {
+  width: $default_width;
+  height: $default_height;
+  background-color: antiquewhite;
+  color: olivedrab;
+  border: 1px solid aqua;
+  position: absolute;
+  margin: 20%;
+ -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
+}
+/*default style of image to fit the div*/
+img{
+    width: $default_width;
+    height: $default_height;
+}
+/*Hover the main div to change style on image and div as well*/
+#maindiv:hover {
+    color:blueviolet;
+    font-weight: bold;
+    width: 500px;
+    height: 400px;
+    
+    img {
+    border-radius: 500px; 
+    padding: 22%;
+    transform: scale(1,1);
+    }
+        
+}
