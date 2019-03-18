@@ -1,15 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-      <!-- Global js file included here -->
-    <script type="text/javascript" src="./js/main.js"></script>
-      <!-- Global Stylesheet included here-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-      <title>Session4 Assignment3</title>
-  </head>
-  <body>
-      <div id="maindiv">
-        <img src="images/3.jpg">
-      </div>
-  </body>
+<style>
+    
+
+    .clearfix:before,
+    .clearfix:after {
+        content: '';
+        display: table;
+    }
+
+    .cleaffix:after {
+        clear: both;
+    }
+
+   
+
+    .trans {
+        -webkit-transition: background 1s, border-radius 1s;
+        transition: background 1s, border-radius 1s;
+    }
+
+    .container div {
+        width: 256px;
+        height: 256px;
+        background: green;
+        /* border-radius: 128px; */
+    }
+
+    .container {
+        max-width: 512px;
+    }
+
+   
+    .circle:hover,
+    .clover:hover {
+        background:orange;
+    }
+
+    .circle:hover {
+        border-radius: 50%;
+    }
+
+   
+</style>
+
+<body>
+    <center>
+        <div class="clearfix container left">
+            <div class="circle trans left">Box</div>
+        </div>
+    </center>
+</body>
+
 </html>
